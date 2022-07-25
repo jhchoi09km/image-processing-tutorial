@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 cam = cv2.VideoCapture(0)
-interval = 10
+interval = 1
 
 while True:
     _, img = cam.read()
