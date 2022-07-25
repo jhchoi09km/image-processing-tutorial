@@ -14,9 +14,9 @@ while True:
     cv2.rectangle(img, (x,y), (x+w,y+h), (0,255,0), thickness=2)
 
     cv2.imshow('video', img)
-    cv2.waitKey(10)
+    cv2.waitKey(100)
 
 
 cam.release()
-cv22.destroyAllWindows()
+cv2.destroyAllWindows()
 
