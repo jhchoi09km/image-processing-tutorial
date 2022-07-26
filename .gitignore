@@ -1,3 +1,4 @@
 *.whl
 *.pyc
+5_mnist/MNIST/*
 
