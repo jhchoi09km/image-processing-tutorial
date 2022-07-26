@@ -65,12 +65,14 @@ print(net)
 
 # loss and optim
 loss = nn.CrossEntropyLoss()
-optim = torch.optim.Adam(net.parameters(), lr=1e-4)
+optim = torch.optim.SGD(net.parameters(), lr=1e-3)
 
 # train network
+curve = []
 for t in range(num_epoch):
     print('epoch num:',t)
-    curve = train(dataloader_train, net, loss, optim)
+    new_curve = train(dataloader_train, net, loss, optim)
+    curve = curve + new_curve
     print('testing phase:')
     test(dataloader_test, net, loss)
 
