@@ -7,7 +7,7 @@ import sys
 net_type = 'mb2-ssd-lite'
 model_path = 'models/mb2-ssd-lite-mp-0_686.pth'
 label_path = 'models/voc-model-labels.txt'
-image_path = 'airport.jpg'
+image_path = 'input.png'
 
 class_names = [name.strip() for name in open(label_path).readlines()]
 
