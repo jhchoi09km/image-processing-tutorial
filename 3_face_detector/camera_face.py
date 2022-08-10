@@ -20,7 +20,7 @@ while True:
     for i in range(len(faces_rect)):
         x,y,w,h = faces_rect[i]
         cv2.rectangle(img, (x,y), (x+w,y+h), (0,255,0), thickness=2)
-
+    
     cv2.imshow('video', img)
     cv2.waitKey(interval)
 
